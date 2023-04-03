@@ -21,3 +21,17 @@ The square root of 3.0 is 1.7320508075688772
 """
 import math
 
+a = True
+
+while a == True:
+    tryNum = input('Eneter number')
+    try:
+        ans = math.sqrt(int(tryNum))
+        print(ans)
+        a==False
+    except:
+        try:
+            int(tryNum)
+            print('no square root')
+        except:
+            print('not number')
